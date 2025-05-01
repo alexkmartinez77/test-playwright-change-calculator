@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Change Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Change Calculator</h1>
+    </header>
+    <main>
+        <div class="container">
+            <label for="amount-due">Amount Due:</label>
+            <input type="number" id="amount-due" placeholder="Enter sale price" required>
+        
+            <label for="amount-received">Amount Received:</label>
+            <input type="number" id="amount-received" placeholder="Enter amount received" required>
+        
+            <button id="calculate-change">Calculate Change</button>
+            <h2>Change Due:</h2>
+            <div id="change-output">
+                <div class="output-box">
+                    <span class="output-label">Dollars:</span>
+                    <p id="dollars-output" class="output-value">0</p>
+                </div>
+                <div class="output-box">
+                    <span class="output-label">Quarters:</span>
+                    <p id="quarters-output" class="output-value">0</p>
+                </div>
+                <div class="output-box">
+                    <span class="output-label">Dimes:</span>
+                    <p id="dimes-output" class="output-value">0</p>
+                </div>
+                <div class="output-box">
+                    <span class="output-label">Nickels:</span>
+                    <p id="nickels-output" class="output-value">0</p>
+                </div>
+                <div class="output-box">
+                    <span class="output-label">Pennies:</span>
+                    <p id="pennies-output" class="output-value">0</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
